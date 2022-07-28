@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+
+  <Button
+      android:id="@+id/next_button"
+      android:text="NEXT"
+      android:textColor="@color/black"
+      android:backgroundTint="@color/white"
+      android:textSize="32sp"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+  <Button
+      android:text="⬅"
+      android:textSize="32sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:backgroundTint="@color/green"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  <ImageView
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:src="@drawable/img"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"/>
+
+  <TextView
+      android:id="@+id/text_register"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:textStyle="bold"
+      android:textSize="32sp"
+      android:text="REGISTER"
+      android:textColor="@color/white"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  <EditText
+      android:id="@+id/username_button"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_margin="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="56dp"
+      android:background="@color/lightgreen"
+      android:hint="   Username"
+      android:textSize="30sp"
+      android:textColorHint="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/email_button" />
+
+  <EditText
+      android:id="@+id/email_button"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_margin="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="56dp"
+      android:background="@color/lightgreen"
+      android:hint="   Email"
+      android:textSize="30sp"
+      android:textColorHint="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toTopOf="@+id/next_button"
+      app:layout_constraintTop_toBottomOf="@id/text_register" />
+
+  <EditText
+      android:id="@+id/password_button"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_margin="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="56dp"
+      android:background="@color/lightgreen"
+      android:hint="   Password"
+      android:textSize="30sp"
+      android:textColorHint="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/email_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
